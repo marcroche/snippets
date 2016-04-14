@@ -1,5 +1,6 @@
 //==========================================================================
 // Option 2 Question 1 Test
+// Assumes that o2.1.js and jasmine are loaded
 //==========================================================================
 
 describe("Foo test suite", function() {
