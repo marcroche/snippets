@@ -19,9 +19,10 @@ function connectToDb() {
   db.connect(function (err) {
     if (err) {
       console.error(err);
+      delay = Math.max(delay *= 2, 1);
       setTimeout(function() {
           connectToDb();
-        }, (delay = Math.max(delay *= 2, 1)) * 1000);
+        }, delay * 1000);
     } else {
       console.log ('successfully connected!');
     }
